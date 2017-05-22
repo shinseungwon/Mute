@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.shinsw.seungwon.mute.ArtistActivity">
+
+    <LinearLayout
+        android:id="@+id/artistactivity_titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/artistactivity_albumart"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorAccent"
+                android:contentDescription="albumart"
+                android:padding="20dp"
+                android:src="@mipmap/default_albumart" />
+
+            <ImageView
+                android:id="@+id/avibrant"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/artistactivity_albumart"
+                android:layout_toRightOf="@+id/artistactivity_albumart"
+                android:scaleType="matrix"
+                android:src="@mipmap/vibrant" />
+
+            <ImageView
+                android:id="@+id/acalm"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/avibrant"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/artistactivity_albumart"
+                android:layout_toRightOf="@+id/artistactivity_albumart"
+                android:scaleType="matrix"
+                android:src="@mipmap/calm" />
+
+            <ImageView
+                android:id="@+id/abeat"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/acalm"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/artistactivity_albumart"
+                android:layout_toRightOf="@+id/artistactivity_albumart"
+                android:scaleType="matrix"
+                android:src="@mipmap/beat" />
+
+            <ImageView
+                android:id="@+id/arock"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/abeat"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/artistactivity_albumart"
+                android:layout_toRightOf="@+id/artistactivity_albumart"
+                android:scaleType="matrix"
+                android:src="@mipmap/rock" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/artistactivity_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/aclickimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/at_play" />
+
+            <TextView
+                android:id="@+id/aclicktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/agoodimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/nw_goodactive" />
+
+            <TextView
+                android:id="@+id/agoodtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/abadimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/nw_badactive" />
+
+            <TextView
+                android:id="@+id/abadtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/artistactivity_divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary" />
+
+
+        <ListView
+            android:id="@+id/artistactivity_titlelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

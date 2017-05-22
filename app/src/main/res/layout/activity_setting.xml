@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shinsw.seungwon.mute.SettingActivity">
+
+    <CheckBox
+        android:id="@+id/setting_motion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Use Motion" />
+    <!--
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_motion"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="50dp"
+            android:clickable="false"
+            android:id="@+id/setting_radiogroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Left Handed"
+                android:id="@+id/radioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Right Handed"
+                android:id="@+id/radioButton2" />
+        </RadioGroup>
+        -->
+    <View
+        android:id="@+id/setting_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setting_motion"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary" />
+
+    <View
+        android:id="@+id/setting_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/setting_duptext"
+        android:layout_alignStart="@+id/setting_duptext"
+        android:layout_below="@+id/setting_seekbartag1"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary" />
+
+    <View
+        android:id="@+id/setting_divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setting_duptext"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary" />
+
+    <View
+        android:id="@+id/setting_divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/setting_motion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignStart="@+id/setting_motion"
+        android:layout_below="@+id/setting_nettext"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary" />
+
+    <View
+        android:id="@+id/setting_divider5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/setting_motion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignStart="@+id/setting_motion"
+        android:layout_below="@+id/seekbartag1"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary" />
+
+
+    <SeekBar
+        android:id="@+id/setting_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setting_divider1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:id="@+id/setting_duptext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setting_motion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignStart="@+id/setting_motion"
+        android:layout_below="@+id/setting_divider5"
+        android:layout_margin="10dp"
+        android:text="Delete Duplicated Songs"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/setting_nettext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setting_motion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignStart="@+id/setting_motion"
+        android:layout_below="@+id/setting_divider3"
+        android:layout_margin="10dp"
+        android:text="Get Preference Value from Network"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/setting_seekbartag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_seekbar"
+        android:layout_marginLeft="10dp"
+        android:text="Only you like"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/setting_seekbartag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/setting_seekbar"
+        android:layout_marginRight="10dp"
+        android:text="Just play randomly"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <SeekBar
+        android:id="@+id/c_clusterbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_divider2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:indeterminate="false" />
+
+    <TextView
+        android:id="@+id/seekbartag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/c_clusterbar"
+        android:layout_marginLeft="10dp"
+        android:text="I don&apos;t care about genres"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/seekbartag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/c_clusterbar"
+        android:layout_marginRight="10dp"
+        android:text="I wanna specific genre"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#aaaaaa</color>
+    <color name="colorPrimaryDark">#666666</color>
+    <color name="colorAccent">#aaaaaa</color>
+
+    <color name="colorOne">#555555</color>
+    <color name="colorTwo">#777777</color>
+    <color name="colorThree">#999999</color>
+    <color name="colorFour">#bbbbbb</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="primary_text_material_light">#555555</color>
+    <color name="secondary_text_material_light">#aaaaaa</color>
+    <color name="secondary_text_material_dark">#000000</color>
+    <color name="primary_text_material_dark">#000000</color>
+
+    <color name="toolbar">#00ffffff</color>
+    <color name="black">#ffffff</color>
+</resources>
